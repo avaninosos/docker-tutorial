@@ -10,7 +10,7 @@ services:
     # Or if you wanted, you could just change the port of the app:
     # https://stackoverflow.com/questions/41940663/how-can-i-change-the-host-and-port-that-the-flask-command-uses
       #- "5000:5000"
-      - "5000:5999"
+      - "5999:5999"
 
   db:
     image: mysql:5.7
