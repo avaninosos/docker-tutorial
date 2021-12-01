@@ -5,7 +5,12 @@ services:
     links:
       - db
     ports:
-      - "5000:5000"
+    # You can change a port number that an application binds to on the host:
+    # https://docs.docker.com/compose/compose-file/compose-file-v2/#ports
+    # Or if you wanted, you could just change the port of the app:
+    # https://stackoverflow.com/questions/41940663/how-can-i-change-the-host-and-port-that-the-flask-command-uses
+      #- "5000:5000"
+      - "5000:5999"
 
   db:
     image: mysql:5.7
